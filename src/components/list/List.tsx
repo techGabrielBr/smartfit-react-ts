@@ -51,10 +51,10 @@ function List({data}: Props){
                                     <p className="pb-3 border-b-2 border-[#CDCDCD]" dangerouslySetInnerHTML={{ __html: i.content }} />
 
                                     <div className="grid grid-cols-4 mt-6 mb-8 gap-x-4 gap-y-2">
-                                        <img src={imgDictionary.mask[i.mask]} alt="Máscara"/>
-                                        <img src={imgDictionary.towel[i.towel]} alt="Toalha"/>
-                                        <img src={imgDictionary.fountain[i.fountain]} alt="Bebedouro"/>
-                                        <img src={imgDictionary.locker_room[i.locker_room]} alt="Vestiários"/>
+                                        <img src={imgDictionary["mask"][i.mask as keyof typeof imgDictionary.mask]} alt="Máscara"/>
+                                        <img src={imgDictionary["towel"][i.towel as keyof typeof imgDictionary.towel]} alt="Toalha"/>
+                                        <img src={imgDictionary["fountain"][i.fountain as keyof typeof imgDictionary.fountain]} alt="Bebedouro"/>
+                                        <img src={imgDictionary["locker_room"][i.locker_room as keyof typeof imgDictionary.locker_room]} alt="Vestiários"/>
                                     </div>
 
                                     <div className="grid grid-cols-2 gap-x-4 gap-y-8 mb-8" key={`schedule-${index}`}>
