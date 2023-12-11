@@ -90,6 +90,7 @@ function App() {
       toast.error('É necessário selecionar um horário de treino para realizar a pesquisa.')
     }else{
       setFilteredList(prevList);
+      window.location.href = "#list-box"
     }
   }
 
@@ -115,8 +116,10 @@ function App() {
             <Legend></Legend>
           </div>
 
-          {filteredList.length > 0 && <List data={filteredList}></List>}
-          {filteredList.length == 0 && <p className='text-center font-gothamBold mt-8'>Nenhuma academia encontrada</p>}
+          <div id='list-box'>
+            {filteredList.length > 0 && <List data={filteredList}></List>}
+            {filteredList.length == 0 && <p className='text-center font-gothamBold mt-8' id='notfound'>Nenhuma academia encontrada</p>}
+          </div>
         </div>
         <Footer></Footer>
       </div>

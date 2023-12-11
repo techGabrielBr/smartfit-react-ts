@@ -21,3 +21,7 @@
     font-family: "gotham-light"; 
     src: url("../src/assets/fonts/gotham-light.woff2"); 
 }
+
+html{
+    scroll-behavior: smooth;
+}
