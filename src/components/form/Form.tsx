@@ -5,11 +5,11 @@ type Props = {total: number, setParentFilter: CallableFunction, resetList: Calla
 
 function Form({total, setParentFilter, resetList, filter, updateList}: Props) {
     const onHourChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setParentFilter((prevState: Filter) => ({
-            ...prevState,
+        setParentFilter({
+            ...filter,
             dirty: true,
             hour: e.target.value,
-        }))
+        })
     }
 
     const onOnlyOpenedChange = () => {
@@ -20,11 +20,11 @@ function Form({total, setParentFilter, resetList, filter, updateList}: Props) {
             value = false;
         }
 
-        setParentFilter((prevState: Filter) => ({
-            ...prevState,
+        setParentFilter({
+            ...filter,
             dirty: true,
             onlyOpened: value
-        }))
+        })
     }
 
     return (

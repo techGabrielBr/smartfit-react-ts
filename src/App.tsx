@@ -9,6 +9,7 @@ import ApiResponse from './models/ApiResponse';
 import List from './components/list/List';
 import { useFirstRender } from './hooks/useFirstRender';
 import toast, { Toaster } from 'react-hot-toast';
+import Filter from './models/Filter';
 
 function App() {
   const firstRender = useFirstRender();
@@ -22,6 +23,14 @@ function App() {
     onlyOpened: true
   });
   const [prevList, setPrevList] = useState<Array<Gym>>([])
+
+  const changeFilter = (newFilter: Filter) => {
+    setFilter({
+      dirty: newFilter.dirty,
+      hour: newFilter.hour,
+      onlyOpened: newFilter.onlyOpened
+    });
+  }
 
   useEffect(() => {
     if(!firstRender && filter.dirty == true){
@@ -109,7 +118,7 @@ function App() {
           </p>
 
           <div className='mt-8'>
-            <Form setParentFilter={setFilter} total={total} resetList={resetList} filter={filter} updateList={updateList}></Form>
+            <Form setParentFilter={changeFilter} total={total} resetList={resetList} filter={filter} updateList={updateList}></Form>
           </div>
 
           <div className='my-8'>

@@ -8,7 +8,7 @@ export default interface Gym{
     uf?: string,
     content?: string,
     opened?: boolean,
-    mask: string,
+    mask?: string,
     towel?: string,
     fountain?: string,
     locker_room?: string,
