@@ -70,8 +70,8 @@ function Form({total, setParentFilter, resetList, filter, updateList}: Props) {
                     </div>
 
                     <div className='flex flex-wrap justify-center mt-10 gap-x-7 gap-y-3'>
-                        <button className=' w-[350px] bg-transparent hover:bg-yellow font-semibold py-2 px-4 border border-blue-500 rounded font-gothamBold' type='button' onClick={() => updateList()}>ENCONTRAR UNIDADE</button>
-                        <button className='w-[350px] bg-transparent hover:bg-red font-semibold hover:text-white py-2 px-4 border border-blue-500 rounded font-gothamBold' type='reset' onClick={() => resetList()}>LIMPAR</button>
+                        <button className=' w-[350px] bg-transparent hover:bg-yellow font-semibold py-2 px-4 border border-blue-500 rounded font-gothamBold' type='button' onClick={() => updateList()} id='find-btn'>ENCONTRAR UNIDADE</button>
+                        <button className='w-[350px] bg-transparent hover:bg-red font-semibold hover:text-white py-2 px-4 border border-blue-500 rounded font-gothamBold' type='reset' onClick={() => resetList()} id='reset-btn'>LIMPAR</button>
                     </div>
                 </form>
             </div>

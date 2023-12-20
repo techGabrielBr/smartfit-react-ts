@@ -34,7 +34,7 @@ const imgDictionary = {
 function List({data}: Props){
     return (
         <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-x-4 gap-y-2">
+            <div id="list" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-x-4 gap-y-2">
                 {data.map((i, index) => {
                     return (
                         <div className='flex flex-col p-4 bg-[#E8E8E8] rounded-lg' key={`card-${index}`}>

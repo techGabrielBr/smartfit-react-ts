@@ -1,0 +1,56 @@
+{
+  "locations": [
+    {
+      "id": 10998878976081,
+      "title": "Limeira",
+      "content": "\n<p>Avenida Campinas, 50 &#8211; Vila Cidade Jardim<br>Limeira, SP</p>\n",
+      "opened": true,
+      "mask": "required",
+      "towel": "required",
+      "fountain": "partial",
+      "locker_room": "partial",
+      "schedules": [
+          {
+              "weekdays": "Seg. à Sex.",
+              "hour": "06h às 10h"
+          },
+          {
+              "weekdays": "Seg. à Sex.",
+              "hour": "17h às 21h"
+          },
+          {
+              "weekdays": "Sáb.",
+              "hour": "09h às 14h"
+          },
+          {
+              "weekdays": "Dom.",
+              "hour": "Fechada"
+          }
+      ]
+    },
+    {
+      "id": 10998878976096,
+      "title": "Teresina Shopping",
+      "content": "\n<p>Av. Raul Lopes, 1000 &#8211; Noivos<br>Teresina, PI</p>\n",
+      "opened": true,
+      "mask": "required",
+      "towel": "required",
+      "fountain": "partial",
+      "locker_room": "allowed",
+      "schedules": [
+        {
+          "weekdays": "Seg. à Sex.",
+          "hour": "06h às 22h"
+        },
+        {
+          "weekdays": "Sáb.",
+          "hour": "Fechada"
+        },
+        {
+          "weekdays": "Dom.",
+          "hour": "Fechada"
+        }
+      ]
+    }
+  ]
+}

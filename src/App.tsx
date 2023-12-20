@@ -121,7 +121,7 @@ function App() {
             <Form setParentFilter={changeFilter} total={total} resetList={resetList} filter={filter} updateList={updateList}></Form>
           </div>
 
-          <div className='my-8'>
+          <div id='legend-container' className='my-8'>
             <Legend></Legend>
           </div>
 
